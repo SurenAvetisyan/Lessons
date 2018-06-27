@@ -1,0 +1,821 @@
+/* line 5, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby25/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, style.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, style.scss */
+.width {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 11, style.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* line 14, style.scss */
+#main {
+  background-color: black;
+  opacity: 0.9;
+  background-image: url(../images/_%20photo.png);
+  width: 100%;
+}
+/* line 19, style.scss */
+#main .menu {
+  opacity: 0.8;
+  background-color: grey;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0;
+}
+/* line 29, style.scss */
+#main .menu .left h2 {
+  font-size: 22px;
+}
+/* line 32, style.scss */
+#main .menu .left a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 38, style.scss */
+#main .menu span {
+  color: #4bcaff;
+}
+/* line 42, style.scss */
+#main .menu .right a {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #fff;
+  border: 1px solid transparent;
+}
+/* line 47, style.scss */
+#main .menu .right a a:hover {
+  border: 1px solid transparent;
+}
+/* line 51, style.scss */
+#main .menu .right a:hover {
+  color: #4bcaff;
+  border: 1px solid #4bcaff;
+}
+@media screen and (max-width: 850px) {
+  /* line 59, style.scss */
+  #main .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 64, style.scss */
+  #main h2 {
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 585px) {
+  /* line 71, style.scss */
+  #main .menu .right a {
+    padding: 0 2px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 78, style.scss */
+  #main .menu {
+    padding: 10px;
+  }
+  /* line 81, style.scss */
+  #main .menu .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0;
+  }
+  /* line 87, style.scss */
+  #main .menu .right a:hover {
+    border: 1px solid transparent;
+  }
+}
+/* line 94, style.scss */
+#main .bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 16% 0;
+}
+/* line 102, style.scss */
+#main .bg h1 {
+  font-size: 45px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+/* line 110, style.scss */
+#main .bg h2 {
+  font-size: 45px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+}
+@media screen and (max-width: 930px) {
+  /* line 119, style.scss */
+  #main .bg {
+    padding: 25px;
+  }
+  /* line 121, style.scss */
+  #main .bg h1 {
+    font-size: 18px;
+  }
+  /* line 124, style.scss */
+  #main .bg h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 130, style.scss */
+  #main .bg {
+    padding: 10px;
+  }
+  /* line 132, style.scss */
+  #main .bg h1 {
+    font-size: 14px;
+  }
+}
+/* line 137, style.scss */
+#main .bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #333;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* line 148, style.scss */
+#header {
+  padding: 4% 5%;
+  background-color: #4bcaff;
+}
+/* line 151, style.scss */
+#header h1 {
+  font-size: 20px;
+  padding: 2% 8%;
+}
+/* line 155, style.scss */
+#header span {
+  border-bottom: 1px solid #333;
+}
+/* line 158, style.scss */
+#header .row {
+  display: flex;
+  flex-direction: row;
+  padding: 1% 8%;
+  justify-content: space-around;
+}
+/* line 165, style.scss */
+#header .info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 0;
+}
+/* line 170, style.scss */
+#header .info h2 {
+  padding: 25px 0;
+}
+@media screen and (max-width: 850px) {
+  /* line 148, style.scss */
+  #header {
+    text-align: center;
+  }
+  /* line 177, style.scss */
+  #header .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 180, style.scss */
+  #header .row .info {
+    padding: 10px 5px;
+  }
+}
+
+/* line 188, style.scss */
+#figure .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 12%;
+}
+/* line 194, style.scss */
+#figure .left1 h1 {
+  font-size: 20px;
+}
+/* line 197, style.scss */
+#figure .left1 span {
+  border-bottom: 1px solid #333;
+}
+/* line 202, style.scss */
+#figure .right1 a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 15px;
+  font-family: bold;
+  border: 1px solid transparent;
+  padding: 4px 5px;
+}
+/* line 210, style.scss */
+#figure .right1 a:hover {
+  border: 1px solid #4bcaff;
+  border-top: 3px solid #4bcaff;
+}
+/* line 216, style.scss */
+#figure .pic {
+  display: flex;
+  flex-direction: column;
+}
+/* line 219, style.scss */
+#figure .pic .pic1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12%;
+  padding-bottom: 50px;
+}
+/* line 225, style.scss */
+#figure .pic .pic1 img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  padding: 0px;
+}
+/* line 231, style.scss */
+#figure .pic .pic1 img:hover {
+  color: black;
+  opacity: 0.9;
+}
+@media screen and (max-width: 1000px) {
+  /* line 238, style.scss */
+  #figure .top {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* line 242, style.scss */
+  #figure .pic1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  /* line 246, style.scss */
+  #figure .pic1 img {
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* line 254, style.scss */
+  #figure .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  /* line 260, style.scss */
+  #figure h1 {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 267, style.scss */
+  #figure .top {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  /* line 271, style.scss */
+  #figure .top a {
+    padding: 10px;
+  }
+  /* line 274, style.scss */
+  #figure .top a:hover {
+    border: 1px solid transparent;
+    color: #4bcaff;
+  }
+}
+
+/* line 281, style.scss */
+#section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 12%;
+  background-color: #515f67;
+}
+/* line 286, style.scss */
+#section .text {
+  width: 50%;
+  color: white;
+}
+/* line 289, style.scss */
+#section .text h1 {
+  font-size: 20px;
+}
+/* line 291, style.scss */
+#section .text h1 span {
+  border-bottom: 1px solid white;
+}
+/* line 296, style.scss */
+#section p {
+  padding: 20px 0;
+}
+/* line 299, style.scss */
+#section input {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #515f67;
+  cursor: pointer;
+}
+/* line 307, style.scss */
+#section input:hover {
+  box-shadow: 0 0 3px 3px #333;
+}
+@media screen and (max-width: 820px) {
+  /* line 281, style.scss */
+  #section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 314, style.scss */
+  #section input {
+    margin-bottom: 10px;
+  }
+  /* line 317, style.scss */
+  #section .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  /* line 325, style.scss */
+  #section iframe {
+    width: 280px;
+    height: 210px;
+  }
+}
+
+/* line 331, style.scss */
+#twitter {
+  background-color: #4bcaff;
+  padding: 4% 12%;
+  color: white;
+}
+/* line 335, style.scss */
+#twitter .tw {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 338, style.scss */
+#twitter .tw h1 {
+  font-size: 40px;
+}
+/* line 340, style.scss */
+#twitter .tw h1 span {
+  border-bottom: 1px solid white;
+  letter-spacing: 2px;
+}
+/* line 346, style.scss */
+#twitter .tw i {
+  font-size: 50px;
+}
+/* line 350, style.scss */
+#twitter h2 {
+  font-size: 30px;
+  padding: 40px 0;
+}
+/* line 353, style.scss */
+#twitter h2 a {
+  text-decoration: none;
+  font-size: 33px;
+  font-family: bolder;
+  color: white;
+}
+/* line 359, style.scss */
+#twitter h2 a:hover {
+  color: antiquewhite;
+}
+
+/* line 364, style.scss */
+#footer {
+  background-image: url(../images/_%20bg%20photo.png);
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 12%;
+  background-position: center;
+  filter: grayscale(100%);
+  background-color: black;
+}
+/* line 372, style.scss */
+#footer .left3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+/* line 377, style.scss */
+#footer .left3 h1 {
+  font-size: 20px;
+}
+/* line 380, style.scss */
+#footer .left3 h1 span {
+  border-bottom: 1px solid white;
+}
+/* line 384, style.scss */
+#footer .left3 p {
+  padding: 20px 0;
+}
+/* line 388, style.scss */
+#footer .right3 {
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+/* line 395, style.scss */
+#footer i {
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 35px 5px;
+  cursor: pointer;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+/* line 404, style.scss */
+#footer i:hover {
+  background-color: white;
+  color: gray;
+}
+@media screen and (max-width: 860px) {
+  /* line 409, style.scss */
+  #footer .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 413, style.scss */
+  #footer .icons i {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 364, style.scss */
+  #footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  /* line 424, style.scss */
+  #footer .left3 {
+    width: 90%;
+  }
+  /* line 427, style.scss */
+  #footer .right3 {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* line 434, style.scss */
+#tes {
+  padding: 4% 12%;
+  color: #333;
+}
+/* line 437, style.scss */
+#tes .tes1 {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 440, style.scss */
+#tes .tes1 h1 {
+  font-size: 20px;
+}
+/* line 442, style.scss */
+#tes .tes1 h1 span {
+  border-bottom: 1px solid #333;
+}
+/* line 446, style.scss */
+#tes .tes1 h2 {
+  font-size: 40px;
+}
+/* line 450, style.scss */
+#tes p {
+  font-size: 25px;
+  padding: 20px 0;
+}
+/* line 454, style.scss */
+#tes h5 {
+  color: #4bcaff;
+}
+
+/* line 458, style.scss */
+#end {
+  color: white;
+  background-image: url(../images/Layer%201.png);
+  padding: 4% 12%;
+  background-color: gray;
+  background-position: center;
+}
+/* line 465, style.scss */
+#end .cont h1 {
+  font-size: 20px;
+}
+/* line 468, style.scss */
+#end .cont span {
+  border-bottom: 1px solid white;
+}
+/* line 472, style.scss */
+#end .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 476, style.scss */
+#end .button .texts {
+  width: 50%;
+}
+/* line 478, style.scss */
+#end .button .texts p {
+  font-size: 10px;
+  padding: 20px 0 3px 0;
+}
+/* line 482, style.scss */
+#end .button .texts input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: inherit;
+}
+/* line 490, style.scss */
+#end .button .p1 {
+  width: 50%;
+}
+/* line 493, style.scss */
+#end .button h5 {
+  padding: 20px 0 0 0;
+}
+/* line 498, style.scss */
+#end .area {
+  padding: 30px 0;
+}
+/* line 500, style.scss */
+#end .area p {
+  font-size: 10px;
+  padding: 3px 0;
+}
+/* line 504, style.scss */
+#end .area textarea {
+  width: 100%;
+  height: 20%;
+  background-color: inherit;
+  border: 1px solid white;
+  min-width: 320px;
+  min-height: 200px;
+  padding: 10px;
+}
+/* line 516, style.scss */
+#end .send input {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #4bcaff;
+  background-color: #4bcaff;
+  color: white;
+  cursor: pointer;
+}
+/* line 524, style.scss */
+#end .send input:hover {
+  background-color: white;
+  color: #4bcaff;
+}
+@media screen and (max-width: 1090px) {
+  /* line 458, style.scss */
+  #end {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 533, style.scss */
+  #end .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 538, style.scss */
+  #end .texts input {
+    width: 150px;
+    height: 150px;
+  }
+  /* line 544, style.scss */
+  #end .cont {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 549, style.scss */
+  #end .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 555, style.scss */
+  #end .area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+  }
+  /* line 564, style.scss */
+  #end .send {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 690px) {
+  /* line 572, style.scss */
+  #end .button .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 578, style.scss */
+  #end .button .texts input {
+    width: 100px;
+    height: 30px;
+  }
+  /* line 583, style.scss */
+  #end .button .p1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* line 588, style.scss */
+  #end .button .p1 h5 {
+    padding: 3px;
+  }
+  /* line 593, style.scss */
+  #end .area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  /* line 599, style.scss */
+  #end .area textarea {
+    width: 120px;
+    height: 90px;
+  }
+  /* line 604, style.scss */
+  #end .send {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 590px) {
+  /* line 611, style.scss */
+  #end .button .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 617, style.scss */
+  #end .button .texts input {
+    width: 100px;
+    height: 30px;
+  }
+  /* line 622, style.scss */
+  #end .button .p1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* line 627, style.scss */
+  #end .button .p1 h5 {
+    padding: 3px;
+  }
+  /* line 632, style.scss */
+  #end .area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 636, style.scss */
+  #end .area textarea {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+/* line 645, style.scss */
+#finish {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 12%;
+  background-color: #353f47;
+  color: #4a575f;
+}
+/* line 651, style.scss */
+#finish a {
+  text-decoration: none;
+  color: #4a575f;
+  padding: 0 8px;
+  border-right: 2px solid #4a575f;
+}
+/* line 658, style.scss */
+#finish .none {
+  border-right: 2px solid transparent;
+}
