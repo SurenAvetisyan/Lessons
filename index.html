@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl" class="main-component">
+    <div class="container">
+        <form class="form-control" name="myForm">
+            <label for="fname"> First Name:</label>
+            <input type="text" name="firstname" id="fname" ng-model="user.firstName" class="form-control" placeholder="Firstname" required>
+            <br><br/>
+            <label for="select"> Countries: </label>
+            <select ng-model="user.selectedName" ng-options="country for country in countries" value="" class="form-control" id="select"></select>
+            <br><br/>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="c1">Male</label>
+                    <input type="checkbox" id="c1"  ng-model="user.value1" class="form-control select">
+                    <label for="c2">Female</label>
+                    <input type="checkbox" id="c2"  ng-model="user.value2" ng-true-value="'YES'" ng-false-value="'NO'" class="form-control select">
+                </div>
+                <div class="col-md-6">
+                    <label for="r1">Show:</label>
+                    <input type="radio" id="r1" ng-model="showEmail" ng-value="true" class="form-control bg-write radio" >
+                    <label for="r2">Hide:</label>
+                    <input type="radio" id="r2" ng-model="showEmail" ng-value="false" class="form-control radio" >
+                    <label for="email" id="forEmail" ng-show="showEmail" required> Email:</label>
+                    <input type="email" id="email" ng-show="showEmail" ng-model="user.email" name="myAddress" class="form-control" placeholder="Email"><br><br/>
+                </div>
+                <div ng-app="" id="showValues" class="text-center">
+                    <ul class="form-control">
+                        <li ng-repeat='i in user'><p>{{i}}</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input class="btn btn-primary form-control center mt-5" type="reset"  ng-click="" value="Reset">
+                <input type="submit" ng-click="show()" value="Show Data" class="form-control bg-success text-white mt-4">
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+form {
+    height: 600px;
+    padding: 15px;
+    margin-top: 15px;
+}
+.radio {
+    width: 15px;
+    height: 15px;
+}
+.select {
+    width: 15px;
+    height: 15px;
+    background: white;
+}
+#showValues {
+    width: 50%;
+    height: 30%;
+    display: none;
+}
+ul li {
+    list-style: none;
+}
+.col-md-12 > input{
+    background-color: #FDEBD0;
+    color: #333;
+    width: 100px;
+}
