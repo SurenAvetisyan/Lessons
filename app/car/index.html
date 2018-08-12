@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Auto Seller</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+    <div id="top">
+        <div class="left">
+            <i class="fa fa-map-marker"> AUTOSHOP - 123 HOLDING, BUSAN, KOREA </i>
+
+        </div>
+        <div class="right">
+            <a href="#">MY ACCOUNT</a>
+            <a href="#">WISHLIST (0)</a>
+            <a href="#">CHECKOUT</a>
+            <a href="#"><i class="fa fa-shopping-basket"></i>
+            </a>
+        </div>
+    </div>
+    <div id="line">
+        <p>Need support? Call us:</p>
+        <i class="fa fa-phone"> 0123-456-789</i>
+    </div>
+    <div id="icon">
+        <div class="left">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="right">
+            <div class="center">
+                <a href="#">HOME</a>
+                <a href="#">CAR LISTING</a>
+                <a href="#">PRODUCT</a>
+                <a href="#">PAGES</a>
+                <a href="#">CONTACT US</a>
+                <input type="search" name="search" placeholder="Search...">
+                <i class="fa fa-search"></i>
+
+            </div>
+        </div>
+    </div>
+
+
+<backbone>
+    <div id="domain">
+        <div class="left">
+            <a href="#"><i class="fa fa-home" ></i></a>
+            <a href="#">Product</a>
+            <a href="#">Tyres & Wheels</a>
+
+        </div>
+        <div class="right">
+            <button><i class="fa fa-upload"></i> UPLOAD YOUR VEHICLE</button>
+        </div>
+    </div>
+    <div id="seller">
+        <div class="left">
+            <div class="search">
+                <form action="./">
+                    <select name="search">
+                        <option value="">Condition</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <select name="search">
+                        <option value="">Body</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <select name="search">
+                        <option value="">Make</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <select name="search">
+                        <option value="">Model</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <select name="search">
+                        <option value="">Year</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <select name="search">
+                        <option value="">Tranmission</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <button name="send"><i class="fa fa-search"></i> SEARCH NOW</button>
+                </form>
+            </div>
+            <div class="pic">
+                <h3>LOREM IPSUM DOLOR</h3>
+                <h1>INTERIOR</h1>
+                <h2>ACCESSORIES</h2>
+                <h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel</h4>
+                <form action="./">
+                    <button name="shop_n">SHOP NOW</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="used">
+                <p>USED CARS</p>
+            </div>
+            <div class="menu">
+                <div>
+                    <a href="#"><i class="fa fa-th"></i></a>
+                    <a href="#"><i class="fa fa-th-list"></i></a>
+
+                </div>
+                <div>
+                    <form action="./">
+                        <i class="fa fa-sort-alpha-asc" aria-hidden="true"> Filter:</i>
+                        <input type="text" placeholder="Latest">
+                        <i class="fa fa-sort-alpha-asc" aria-hidden="true"> Show:</i>
+                        <input type="text" placeholder="Number">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--<div ng-app="myApp" ng-controller="myCtrl">-->
+
+        <!--<p>Today's welcome message is:</p>-->
+
+        <!--<h1>{{myWelcome}}</h1>-->
+
+    <!--</div>-->
+
+    <!--<p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>-->
+
+</backbone>
+<footer>
+    <div class="info">
+        <div>
+            <h2>COMPANY INFO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut .</p>
+            <i class="fa fa-signal"> 123 Holding, Busan, Korea</i>
+            <i class="fa fa-phone"> 0123-456-789</i>
+            <i class="fa fa-envelope"> Support@htmlcs.com</i>
+            <i class="fa fa-globe"> http://www.ndktheme.com</i>
+
+        </div>
+        <div>
+            <h2>NEWSLETTER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut</p>
+            <form action="./">
+                <input type="text" placeholder="Email">
+                <button>SUBSCRIBE</button>
+            </form>
+        </div>
+        <div>
+            <h2>QUICK LINK</h2>
+            <a href="#"><i class="fa fa-angle-right"> Community</i></a>
+            <a href="#"><i class="fa fa-angle-right"> Community</i></a>
+            <a href="#"><i class="fa fa-angle-right"> Blog</i></a>
+            <a href="#"><i class="fa fa-angle-right"> Guide use</i></a>
+            <a href="#"><i class="fa fa-angle-right"> Our Servces</i></a>
+
+        </div>
+    </div>
+    <div class="by">
+        <div>© 2016 DESIGNED BY <span>T3THEME</span>. ALL RIGHTS RESERVED</div>
+        <div>
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-google" ></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../app.js"></script>
+    <script src="../components/version/version.js"></script>
+    <script src="../components/version/version-directive.js"></script>
+    <script src="../components/version/interpolate-filter.js"></script>
+
+</body>
+
+
+</html>
